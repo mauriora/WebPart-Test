@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Fusion5-WebPart-Example Solution",
+    "id": "79a41a65-bab5-4796-8c15-fb43be772275",
+    "version": "0.0.3.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TermStore.ReadWrite.All"
+      }
+    ],
+    "developer": {
+      "name": "Fusion 5",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    }
+  },
+  "paths": {
+    "zippedPackage": "solution/webpart-example.sppkg"
+  }
+}
