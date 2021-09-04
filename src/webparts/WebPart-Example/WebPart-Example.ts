@@ -11,8 +11,8 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'WebPartExampleStrings';
 import Example from './components/Example';
-import * as Controller from '@fusion5/controller-sharepoint-list';
-import { createPropertyPaneSitePicker, ISite } from '@fusion5/utils-spfx-controls-react';
+import * as Controller from '@mauriora/controller-sharepoint-list';
+import { createPropertyPaneSitePicker, ISite } from '@mauriora/utils-spfx-controls-react';
 import { IExampleProps } from './components/IExampleProps';
 import { IListInfo } from '@pnp/sp/presets/all';
 import { configure } from 'mobx';

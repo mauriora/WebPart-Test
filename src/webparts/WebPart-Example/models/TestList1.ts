@@ -1,4 +1,4 @@
-import { Link, ListItem, ListItemBase, MetaTerm, UserLookup } from '@fusion5/controller-sharepoint-list';
+import { Link, ListItem, ListItemBase, MetaTerm, UserLookup } from '@mauriora/controller-sharepoint-list';
 import { Expose, Type } from 'class-transformer';
 import { Test3 } from './Test3';
 

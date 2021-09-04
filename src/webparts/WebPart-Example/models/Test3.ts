@@ -1,4 +1,4 @@
-import { ListItem } from '@fusion5/controller-sharepoint-list';
+import { ListItem } from '@mauriora/controller-sharepoint-list';
 import { Expose } from 'class-transformer';
 
 export class Test3 extends ListItem {

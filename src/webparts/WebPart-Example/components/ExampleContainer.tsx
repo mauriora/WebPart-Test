@@ -2,7 +2,7 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 import { IExampleProps } from './IExampleProps';
 import { Stack } from '@fluentui/react';
-import { ErrorBoundary } from '@fusion5/utils-spfx-controls-react';
+import { ErrorBoundary } from '@mauriora/utils-spfx-controls-react';
 import { TestList1 } from '../models/TestList1';
 import { Announcement } from '../models/Announcement';
 import { ListAndForm } from './ListAndForm';

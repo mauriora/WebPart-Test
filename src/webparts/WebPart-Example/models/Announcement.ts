@@ -1,4 +1,4 @@
-import { Link, ListItem, UserLookup } from '@fusion5/controller-sharepoint-list';
+import { Link, ListItem, UserLookup } from '@mauriora/controller-sharepoint-list';
 import { Expose, Type } from 'class-transformer';
 
 export class Announcement extends ListItem {

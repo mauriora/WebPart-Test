@@ -34,7 +34,7 @@
     "scriptResources": {
       "webpart-example": {
         "type": "path",
-        "path": "webpart-example.js"
+        "path": "webpart-example_835878e6d4f1f122401a.js"
       },
       "@microsoft/sp-property-pane": {
         "type": "component",
@@ -49,37 +49,37 @@
       "ControlStrings": {
         "type": "localizedPath",
         "paths": {
-          "bg-BG": "ControlStrings_bg-bg.js",
-          "ca-ES": "ControlStrings_ca-es.js",
-          "da-DK": "ControlStrings_da-dk.js",
-          "de-DE": "ControlStrings_de-de.js",
-          "el-GR": "ControlStrings_el-gr.js",
-          "en-US": "ControlStrings_en-us.js",
-          "es-ES": "ControlStrings_es-es.js",
-          "et-EE": "ControlStrings_et-ee.js",
-          "eu-ES": "ControlStrings_eu-es.js",
-          "fi-FI": "ControlStrings_fi-fi.js",
-          "fr-CA": "ControlStrings_fr-ca.js",
-          "fr-FR": "ControlStrings_fr-fr.js",
-          "it-IT": "ControlStrings_it-it.js",
-          "ja-JP": "ControlStrings_ja-jp.js",
-          "lt-LT": "ControlStrings_lt-lt.js",
-          "lv-LV": "ControlStrings_lv-lv.js",
-          "nb-NO": "ControlStrings_nb-no.js",
-          "nl-NL": "ControlStrings_nl-nl.js",
-          "pl-PL": "ControlStrings_pl-pl.js",
-          "pt-PT": "ControlStrings_pt-pt.js",
-          "ro-RO": "ControlStrings_ro-ro.js",
-          "ru-RU": "ControlStrings_ru-ru.js",
-          "sk-SK": "ControlStrings_sk-sk.js",
-          "sr-Latn-RS": "ControlStrings_sr-latn-rs.js",
-          "sv-SE": "ControlStrings_sv-se.js",
-          "tr-TR": "ControlStrings_tr-tr.js",
-          "vi-VN": "ControlStrings_vi-vn.js",
-          "zh-CN": "ControlStrings_zh-cn.js",
-          "zh-TW": "ControlStrings_zh-tw.js"
+          "bg-BG": "ControlStrings_bg-bg_7482cf21283057617ad1a517786e12e0.js",
+          "ca-ES": "ControlStrings_ca-es_712c5e3d3ce0a1e03809f76dd57fd16d.js",
+          "da-DK": "ControlStrings_da-dk_c0f1877aad5445a2bb4e69ad2045b9e1.js",
+          "de-DE": "ControlStrings_de-de_2b3985d8813d2096a0651a09d011ad18.js",
+          "el-GR": "ControlStrings_el-gr_87a476c4ffedea3ccfb37b5a390572a6.js",
+          "en-US": "ControlStrings_en-us_e5014028e88a3dc69aad1863cc2aad73.js",
+          "es-ES": "ControlStrings_es-es_6e049a41e9043d87fee1e9b15797f23a.js",
+          "et-EE": "ControlStrings_et-ee_459d44758d39c914e20e6b86e598fc60.js",
+          "eu-ES": "ControlStrings_eu-es_994f24f3fe2c45fec4c9dfce825a5ffe.js",
+          "fi-FI": "ControlStrings_fi-fi_022ffed491a1d559f0b1de0f5d725720.js",
+          "fr-CA": "ControlStrings_fr-ca_fb8ec02c383b7de74248e2e9bd56d45a.js",
+          "fr-FR": "ControlStrings_fr-fr_fbf24972500169a797d58e90ace5e8bf.js",
+          "it-IT": "ControlStrings_it-it_e017d131022b8407e01691a7346ea953.js",
+          "ja-JP": "ControlStrings_ja-jp_0e1b87c6cc7a918b92f4c726cf836bc3.js",
+          "lt-LT": "ControlStrings_lt-lt_e0af9ccd98d61edb5d53286346486025.js",
+          "lv-LV": "ControlStrings_lv-lv_2cd04fde6155e1d82a5be8d87743cd86.js",
+          "nb-NO": "ControlStrings_nb-no_9cb641377c3ad2d0c4f8c7fb14c0ac9f.js",
+          "nl-NL": "ControlStrings_nl-nl_4b944a5c35894af9261882cfc85f9be6.js",
+          "pl-PL": "ControlStrings_pl-pl_e84d47e9b98da62060e027fdbf617f93.js",
+          "pt-PT": "ControlStrings_pt-pt_8f35d780e808fa4ea5a4019a4ad32e38.js",
+          "ro-RO": "ControlStrings_ro-ro_c2b152e855f44bfb0be34669a312e90f.js",
+          "ru-RU": "ControlStrings_ru-ru_6694d1c8296d26f8470f1adb00443696.js",
+          "sk-SK": "ControlStrings_sk-sk_466102312c899ad98fe99857d18f5e3b.js",
+          "sr-Latn-RS": "ControlStrings_sr-latn-rs_e59e580c715e4bc26b46200fa9dae0d9.js",
+          "sv-SE": "ControlStrings_sv-se_223484a7376acb7de6f86760f816beff.js",
+          "tr-TR": "ControlStrings_tr-tr_1590938f32cec5cc2f45f141b0cd8f12.js",
+          "vi-VN": "ControlStrings_vi-vn_0cc3ed7efd6dc5f8c76f4a3cec5bf175.js",
+          "zh-CN": "ControlStrings_zh-cn_5fa8f87e007f204c0e44ca4630f4b920.js",
+          "zh-TW": "ControlStrings_zh-tw_036be74901e12e2b831684291d8f17f0.js"
         },
-        "defaultPath": "ControlStrings_en-us.js"
+        "defaultPath": "ControlStrings_en-us_e5014028e88a3dc69aad1863cc2aad73.js"
       },
       "@microsoft/sp-core-library": {
         "type": "component",
@@ -93,7 +93,7 @@
       },
       "WebPartExampleStrings": {
         "type": "path",
-        "path": "WebPartExampleStrings_en-us.js"
+        "path": "WebPartExampleStrings_en-us_fbdb6d2f6cd883f3b93557d29ca264b9.js"
       },
       "@microsoft/sp-webpart-base": {
         "type": "component",

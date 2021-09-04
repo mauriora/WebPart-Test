@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { FunctionComponent, useCallback, useEffect, useState } from 'react';
-import { create as createController, ListItem, ListItemConstructor, SharePointModel } from '@fusion5/controller-sharepoint-list';
+import { create as createController, ListItem, ListItemConstructor, SharePointModel } from '@mauriora/controller-sharepoint-list';
 import { Spinner, Stack } from '@fluentui/react';
-import { ErrorBoundary, ItemForm, ItemsList, useAsyncError } from '@fusion5/utils-spfx-controls-react';
+import { ErrorBoundary, ItemForm, ItemsList, useAsyncError } from '@mauriora/utils-spfx-controls-react';
 import * as strings from 'WebPartExampleStrings';
 
 export interface ListAndFormProps<ItemClass extends ListItem = ListItem> {

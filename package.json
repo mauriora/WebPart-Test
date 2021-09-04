@@ -14,8 +14,8 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@fusion5/controller-sharepoint-list": "*",
-    "@fusion5/utils-spfx-controls-react": "*",
+    "@mauriora/controller-sharepoint-list": "*",
+    "@mauriora/utils-spfx-controls-react": "*",
     "@fluentui/react": "^8.16.0",
     "@microsoft/sp-core-library": "^1.12.1",
     "@microsoft/sp-dialog": "^1.12.1",
