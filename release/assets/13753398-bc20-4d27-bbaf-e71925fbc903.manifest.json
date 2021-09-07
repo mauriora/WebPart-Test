@@ -34,7 +34,7 @@
     "scriptResources": {
       "webpart-example": {
         "type": "path",
-        "path": "webpart-example_835878e6d4f1f122401a.js"
+        "path": "webpart-example_d7e311e39ce122396663.js"
       },
       "@microsoft/sp-property-pane": {
         "type": "component",
