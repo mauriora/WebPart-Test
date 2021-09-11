@@ -3,7 +3,7 @@
   "solution": {
     "name": "Mauri-Ora-WebPart-Example Solution",
     "id": "79a41a65-bab5-4796-8c15-fb43be772275",
-    "version": "0.0.3.0",
+    "version": "0.0.5.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

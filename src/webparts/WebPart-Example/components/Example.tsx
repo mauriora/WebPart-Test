@@ -4,7 +4,7 @@ import ExampleContainer from './ExampleContainer';
 import * as strings from 'WebPartExampleStrings';
 import { Label } from '@fluentui/react';
 
-export default class Example extends React.Component<IExampleProps, {}> {
+export default class Example extends React.Component<IExampleProps, unknown> {
   public render(): React.ReactElement<IExampleProps> {
     const configured = (this.props.isolatedListId) && (this.props.isolatedSiteUrl)
       && (this.props.localListId) && (this.props.localSiteUrl);

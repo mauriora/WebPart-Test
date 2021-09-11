@@ -2,7 +2,7 @@
   "id": "13753398-bc20-4d27-bbaf-e71925fbc903",
   "alias": "WebPart-Example",
   "componentType": "WebPart",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifestVersion": 2,
   "requiresCustomScript": false,
   "supportedHosts": [
@@ -34,7 +34,7 @@
     "scriptResources": {
       "webpart-example": {
         "type": "path",
-        "path": "webpart-example_d7e311e39ce122396663.js"
+        "path": "webpart-example_a15a9249f8c92cf60af6.js"
       },
       "@microsoft/sp-property-pane": {
         "type": "component",

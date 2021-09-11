@@ -36,7 +36,7 @@ export default class WebPartExample extends BaseClientSideWebPart<IWebPartExampl
   private localListOptions = new Array<IPropertyPaneDropdownOption>();
   private isolatedListOptions = new Array<IPropertyPaneDropdownOption>();
 
-  protected onInit = async (): Promise<void> => {
+  protected async onInit(): Promise<void> {
     console.log(`${this.context.manifest.alias} [${this.context.manifest.id}] version=${this.context.manifest.version} onInit`, { context: this.context, properties: this.properties });
     await super.onInit();
     await Controller.init(this.context);
@@ -111,8 +111,8 @@ export default class WebPartExample extends BaseClientSideWebPart<IWebPartExampl
     * In the case of custom field, if no target property is provided then a custom value is assigned,
     * which will be in the form of `__CustomField_<key provided when the custom field is created>`.
   */
-  protected onPropertyPaneFieldChanged = (propertyPath: string, oldValue: any, newValue: any) => {
-    console.log(`${this.context.manifest.alias} [${this.context.manifest.id}] version=${this.context.manifest.version} onPropertyPaneFieldChanged(${propertyPath}, ${oldValue}, ${newValue})`, { context: this.context, properties: this.properties });
+  protected onPropertyPaneFieldChanged = (propertyPath: string): void => {
+    console.log(`${this.context.manifest.alias} [${this.context.manifest.id}] version=${this.context.manifest.version} onPropertyPaneFieldChanged(${propertyPath})`, { context: this.context, properties: this.properties });
 
     switch (propertyPath) {
       case "isolatedSiteURL":
@@ -127,12 +127,11 @@ export default class WebPartExample extends BaseClientSideWebPart<IWebPartExampl
     }
   }
 
-  protected onCustomPropertyPaneFieldChanged = (propertyPath: string, newValue: any, ...args) => {
+  protected onCustomPropertyPaneFieldChanged = (propertyPath: string, newValue: Array<ISite>): void => {
     console.log(`${this.context.manifest.alias} [${this.context.manifest.id}] version=${this.context.manifest.version} onCustomPropertyPaneFieldChanged(${propertyPath}, ${newValue})`, { context: this.context, properties: { ...this.properties }, newValue });
 
     switch (propertyPath) {
-      case "isolatedSiteURL":
-        const oldValue = this.properties.isolatedSiteURL;
+      case "isolatedSiteURL": {
         const newSite: ISite = newValue[0];
 
         console.log(`${this.context.manifest.alias} [${this.context.manifest.id}] version=${this.context.manifest.version} onCustomPropertyPaneFieldChanged(${propertyPath}, ${newValue})`, { context: this.context, properties: { ...this.properties }, newValue, newSite });
@@ -148,10 +147,8 @@ export default class WebPartExample extends BaseClientSideWebPart<IWebPartExampl
           this.isolatedDropdownDisabled = true;
           this.context.propertyPane.refresh();
         }
-
-
         this.render();
-
+      }
         break;
     }
     console.log(`${this.context.manifest.alias} [${this.context.manifest.id}] version=${this.context.manifest.version} onCustomPropertyPaneFieldChanged(${propertyPath}, ${newValue})`, { context: this.context, properties: { ...this.properties }, newValue });
