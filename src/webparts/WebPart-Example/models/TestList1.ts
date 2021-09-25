@@ -45,7 +45,7 @@ export class TestList1 extends ListItem {
 
     @Type( () => ListItemBase )
     @Expose({ name: 'MultiLookUp' })
-    public multiLookUp: Array<ListItemBase> = new Array<UserLookup>();
+    public multiLookUp: Array<ListItemBase> = new Array<ListItemBase>();
     
     @Expose({ name: 'SingleChoice' })
     public singleChoice: string = undefined;
