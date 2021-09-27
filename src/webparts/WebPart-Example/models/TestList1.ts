@@ -8,32 +8,32 @@ export class TestList1 extends ListItem {
     }
 
     @Expose({ name: 'CustomText'})
-    public customText: string = undefined;
+    public customText: string;
 
     @Expose({ name: 'MultilineText'})
-    public multilineText: string = undefined;
+    public multilineText: string;
 
     @Expose({ name: 'Money'})
-    public money: number = undefined;
+    public money: number;
 
     @Expose({ name: 'IntegerNumber'})
-    public integerNumber: number = undefined;
+    public integerNumber: number;
 
     @Expose({ name: 'FraactionNumber' })
-    public fraactionNumber: number = undefined;
+    public fractionNumber: number;
 
     @Expose({ name: 'ADateTime' })
-    public aDateTime: string = undefined;
+    public aDateTime: string;
 
     @Expose({ name: 'ADate' })
-    public aDate: string = undefined;
+    public aDate: string;
 
     @Expose({ name: 'AFlag'})
-    public aFlag: boolean = undefined;
+    public aFlag: boolean;
 
     @Type( () => UserLookup )
     @Expose({ name: 'SomeOne' })
-    public someOne: UserLookup = undefined;
+    public someOne: UserLookup;
 
     @Type( () => UserLookup )
     @Expose({ name: 'SeveralPeople'})
@@ -41,49 +41,41 @@ export class TestList1 extends ListItem {
 
     @Type( () => ListItemBase )
     @Expose({ name: 'SingleLookup' })
-    public singleLookup: ListItemBase = undefined;
+    public singleLookup: ListItemBase;
 
     @Type( () => ListItemBase )
     @Expose({ name: 'MultiLookUp' })
     public multiLookUp: Array<ListItemBase> = new Array<ListItemBase>();
     
     @Expose({ name: 'SingleChoice' })
-    public singleChoice: string = undefined;
+    public singleChoice: string;
     
     @Expose({ name: 'MultiChoice' })
     public multiChoice: Array<string> = new Array<string>();
 
     @Type( () => Link )
     @Expose({ name: 'ALink' })
-    public aLink: Link = undefined;
+    public aLink: Link;
 
     @Type( () => MetaTerm )
     @Expose({ name: 'MetaDepartment'})
-    public metaDepartment: MetaTerm = undefined;
+    public metaDepartment: MetaTerm;
 
     @Type( () => MetaTerm )
     @Expose({ name: 'Departments'})
     public departments: Array<MetaTerm> = new Array<MetaTerm>();
 
-    // @Type( () => MetaTerm )
-    // @Expose({ name: 'DepartmentsPlus'})
-    // public departmentsPlus: MetaTerm = undefined;
-
-    // @Type( () => MetaTerm )
-    // @Expose({ name: 'FreeDepartment'})
-    // public freeDepartment: MetaTerm = undefined;
-
     @Expose({ name: 'ChoicePlus' })
-    public choicePlus: string = undefined;
+    public choicePlus: string;
 
     @Expose({ name: 'ChoicesPlus' })
     public choicesPlus: Array<string> = new Array<string>();
 
     @Type( () => Link )
     @Expose({ name: 'APicture' })
-    public aPicture: Link = undefined;
+    public aPicture: Link;
 
     @Type( () => Test3 )
     @Expose({ name: 'SingleExtendedLookup' })
-    public singleExtendedLookup: Test3 = undefined;
+    public singleExtendedLookup: Test3;
 }
