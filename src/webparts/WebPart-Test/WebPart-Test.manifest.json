@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "13753398-bc20-4d27-bbaf-e71925fbc903",
-  "alias": "WebPart-Example",
+  "alias": "WebPart-Test",
   "componentType": "WebPart",
   "version": "*",
   "manifestVersion": 2,
@@ -16,14 +16,14 @@
                 "default": "Other"
             },
             "title": {
-                "default": "WebPart-Example"
+                "default": "WebPart-Test"
             },
             "description": {
-                "default": "WebPart-Example"
+                "default": "WebPart-Test"
             },
     "officeFabricIconFontName": "TimelineDelivery",
     "properties": {
-      "description": "WebPart-Example"
+      "description": "WebPart-Test"
     }
 }
     ]

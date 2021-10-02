@@ -4,7 +4,7 @@ import { IExampleProps } from './IExampleProps';
 import { Stack } from '@fluentui/react';
 import { ErrorBoundary } from '@mauriora/utils-spfx-controls-react';
 import { TestList1 } from '../models/TestList1';
-import { Announcement } from '../models/Announcement';
+import { AnnouncementExtended } from '@mauriora/model-announcement-extended';
 import { ListAndForm } from './ListAndForm';
 
 
@@ -21,7 +21,7 @@ const ExampleContainer: FunctionComponent<IExampleProps> = ({ localListId, local
         <ErrorBoundary>
             <ListAndForm
                 key={'ListAndForm-isolated'}
-                dataClass={Announcement}
+                dataClass={AnnouncementExtended}
                 siteUrl={isolatedSiteUrl}
                 listId={isolatedListId}
             />

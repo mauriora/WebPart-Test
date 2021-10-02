@@ -1,23 +1,25 @@
 {
-  "name": "@mauriora/webpart-example",
-  "version": "0.0.5",
+  "name": "@mauriora/webpart-test",
+  "version": "0.0.6",
   "private": true,
   "main": "lib/index.js",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "initguids": "node generateNewGuidsResetVersions.js",
     "lint": "eslint .",
     "serve": "gulp serve-deprecated --nobrowser ",
-    "build": "gulp clean && gulp bundle --ship && gulp package-solution --ship",
+    "build-release": "node incrementVersions.js && gulp bundle --ship && gulp package-solution --ship",
+    "build-debug": "node incrementVersions.js && gulp bundle && gulp package-solution",
     "clean": "gulp clean",
     "test": "gulp test"
   },
   "dependencies": {
+    "@fluentui/react": "^8.16.0",
     "@mauriora/controller-sharepoint-list": "*",
     "@mauriora/utils-spfx-controls-react": "*",
-    "@fluentui/react": "^8.16.0",
+    "@mauriora/model-announcement-extended": "*",
     "@microsoft/sp-core-library": "^1.12.1",
     "@microsoft/sp-dialog": "^1.12.1",
     "@microsoft/sp-lodash-subset": "^1.12.1",
@@ -53,6 +55,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.25.1",
     "gulp": "^4.0.2",
-    "gulp-eslint7": "^0.3.1"
+    "gulp-eslint7": "^0.3.1",
+    "versiony": "^2.0.1"
   }
 }

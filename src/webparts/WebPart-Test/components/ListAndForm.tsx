@@ -3,7 +3,7 @@ import { FunctionComponent, useCallback, useEffect, useState } from 'react';
 import { create as createController, ListItem, ListItemConstructor, SharePointModel } from '@mauriora/controller-sharepoint-list';
 import { Spinner, Stack } from '@fluentui/react';
 import { ErrorBoundary, ItemForm, ItemsList, useAsyncError } from '@mauriora/utils-spfx-controls-react';
-import * as strings from 'WebPartExampleStrings';
+import * as strings from 'WebPartTestStrings';
 
 export interface ListAndFormProps<ItemClass extends ListItem = ListItem> {
     listId: string;
@@ -21,10 +21,11 @@ export const ListAndForm: FunctionComponent<ListAndFormProps> = ({ listId, siteU
             if (listId && siteUrl) {
                 try {
                     const newController = await createController(listId, siteUrl);
-                    await newController.init();
-
                     const newModel = await newController.addModel(dataClass, '');
-                    await newModel.loadAllRecords();
+
+                    if(0 === newModel.records.length){
+                        await newModel.loadAllRecords();
+                    }
 
                     setModel(newModel);
                     setItem(newModel.newRecord);

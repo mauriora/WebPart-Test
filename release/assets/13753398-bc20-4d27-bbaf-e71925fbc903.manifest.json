@@ -1,8 +1,8 @@
 {
   "id": "13753398-bc20-4d27-bbaf-e71925fbc903",
-  "alias": "WebPart-Example",
+  "alias": "WebPart-Test",
   "componentType": "WebPart",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifestVersion": 2,
   "requiresCustomScript": false,
   "supportedHosts": [
@@ -15,14 +15,14 @@
         "default": "Other"
       },
       "title": {
-        "default": "WebPart-Example"
+        "default": "WebPart-Test"
       },
       "description": {
-        "default": "WebPart-Example"
+        "default": "WebPart-Test"
       },
       "officeFabricIconFontName": "TimelineDelivery",
       "properties": {
-        "description": "WebPart-Example"
+        "description": "WebPart-Test"
       }
     }
   ],
@@ -30,16 +30,20 @@
     "internalModuleBaseUrls": [
       "https://localhost:4321/dist/"
     ],
-    "entryModuleId": "webpart-example",
+    "entryModuleId": "webpart-test",
     "scriptResources": {
-      "webpart-example": {
+      "webpart-test": {
         "type": "path",
-        "path": "webpart-example_a15a9249f8c92cf60af6.js"
+        "path": "webpart-test_0f6ea8e384b430a55162.js"
       },
       "@microsoft/sp-property-pane": {
         "type": "component",
         "id": "f9e737b7-f0df-4597-ba8c-3060f82380db",
         "version": "1.12.1"
+      },
+      "WebPartTestStrings": {
+        "type": "path",
+        "path": "WebPartTestStrings_en-us_eb76d99d83abfcfa3681503846094853.js"
       },
       "@microsoft/sp-lodash-subset": {
         "type": "component",
@@ -90,10 +94,6 @@
         "type": "component",
         "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8",
         "version": "1.12.1"
-      },
-      "WebPartExampleStrings": {
-        "type": "path",
-        "path": "WebPartExampleStrings_en-us_fbdb6d2f6cd883f3b93557d29ca264b9.js"
       },
       "@microsoft/sp-webpart-base": {
         "type": "component",

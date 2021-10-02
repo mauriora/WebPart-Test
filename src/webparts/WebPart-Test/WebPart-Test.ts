@@ -9,7 +9,7 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'WebPartExampleStrings';
+import * as strings from 'WebPartTestStrings';
 import Example from './components/Example';
 import * as Controller from '@mauriora/controller-sharepoint-list';
 import { createPropertyPaneSitePicker, ISite } from '@mauriora/utils-spfx-controls-react';
@@ -25,13 +25,13 @@ configure({
   enforceActions: "never"
 });
 
-export interface IWebPartExampleProps {
+export interface IWebPartTestProps {
   defaultListId: string;
   isolatedListId: string;
   isolatedSiteURL: string;
 }
 
-export default class WebPartExample extends BaseClientSideWebPart<IWebPartExampleProps> {
+export default class WebPartTest extends BaseClientSideWebPart<IWebPartTestProps> {
 
   private localListOptions = new Array<IPropertyPaneDropdownOption>();
   private isolatedListOptions = new Array<IPropertyPaneDropdownOption>();

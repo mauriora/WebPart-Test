@@ -32,7 +32,6 @@ const updateFile = (file, id, version, nestedObject) => {
     fs.writeFileSync(file, JSON.stringify(fileContent, null, 4))
 }
 
-
 const getGuid = () => {
     const id = crypto.randomBytes(16).toString("hex");
     const guid = `${id.substr(0, 8)}-${id.substr(8, 4)}-${id.substr(12, 4)}-${id.substr(16, 4)}-${id.substr(20)}`
