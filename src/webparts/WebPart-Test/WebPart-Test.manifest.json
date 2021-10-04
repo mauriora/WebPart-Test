@@ -1,11 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "13753398-bc20-4d27-bbaf-e71925fbc903",
-  "alias": "WebPart-Test",
-  "componentType": "WebPart",
-  "version": "*",
-  "manifestVersion": 2,
-  "requiresCustomScript": false,
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+    "id": "13753398-bc20-4d27-bbaf-e71925fbc903",
+    "alias": "WebPart-Test",
+    "componentType": "WebPart",
+    "version": "*",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
     "supportedHosts": [
         "SharePointWebPart"
     ],
@@ -19,12 +19,12 @@
                 "default": "WebPart-Test"
             },
             "description": {
-                "default": "WebPart-Test"
+                "default": "Test WebPart for fields and state."
             },
-    "officeFabricIconFontName": "TimelineDelivery",
-    "properties": {
-      "description": "WebPart-Test"
-    }
-}
+            "officeFabricIconFontName": "TimelineDelivery",
+            "properties": {
+                "description": "Test WebPart for fields and state."
+            }
+        }
     ]
 }

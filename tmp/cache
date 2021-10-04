@@ -1,0 +1,138 @@
+
+    <Field ID="{23dae6d9-3d3a-4a77-99c8-44b2cc3373f4}" Name="MultilineText" DisplayName="Multiline text" Type="Note" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{893fc968-4fc8-416a-8142-6a4614493d6e}" Name="Money" DisplayName="Money" Type="Currency" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{bf9b8290-072e-4c23-a875-28fa8e61a5be}" Name="IntegerNumber" DisplayName="Integer" Type="Integer" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{495f9229-aafa-4d09-aed7-10e142db1b20}" Name="FractionNumber" DisplayName="Fraction" Type="Number" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{207cfa2e-1a1f-4f9c-a437-34ce55564f69}" Name="ADateTime" DisplayName="Date time" Type="DateTime" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{91510b5c-b73d-4817-a081-07572e00fbe8}" Name="ADate" DisplayName="Date" Type="DateTime" Format="DateOnly" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{f3b76c0f-a07f-4984-9ffd-0e069751f474}" Name="AFlag" DisplayName="Flag" Type="Boolean" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{6b85d57e-8ab4-457a-b9f9-2cbe91c957d3}" Name="SomeOne" DisplayName="Someone" Type="User" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{df596ecd-c898-4b53-9d98-3b654f01ab2a}" Name="SeveralPeople" DisplayName="Several people" Type="UserMulti" Required="FALSE" Group="Mauri Ora Test" />
+
+    <!-- <Field ID="{af3b7b87-0457-4df4-a5c6-b6f9ed928775}" Name="SingleLookup" DisplayName="Single lookup" Type="Lookup" Required="FALSE" Group="Mauri Ora Test" /> -->
+
+    <Field ID="{2d9cf211-1a65-496d-8ff1-05c4a23cb872}" Name="MultiLookUp" DisplayName="Multi lookUp" Type="LookupMulti" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{388a8768-5a3f-42fa-9f19-0d8a9581760d}" Name="SingleChoice" DisplayName="Single choice" Type="Choice" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Single1</CHOICE>
+            <CHOICE>Single2</CHOICE>
+            <CHOICE>Single3</CHOICE>
+        </CHOICES>    
+    </Field>
+
+    <Field ID="{1a008b03-cb93-4f9c-bc79-268d946e6129}" Name="MultiChoice" DisplayName="Multi choice" Type="MultiChoice" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Multi1</CHOICE>
+            <CHOICE>Multi2</CHOICE>
+            <CHOICE>Multi3</CHOICE>
+        </CHOICES>    
+    </Field>
+
+    <Field ID="{0cacd952-9a01-45eb-aaac-ab1991943b6f}" Name="ALink" DisplayName="ALink" Type="URL" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{2aa1aefa-8b0b-49d8-ac8c-3b3a4164684d}" Name="MetaDepartment" DisplayName="Department" Type="" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{1111b1fe-f987-4fdb-a2d4-28d5fb8f2e3a}" Name="Departments" DisplayName="Departments" Type="" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{535cd918-588f-45de-8238-40bbbb300171}" Name="ChoicePlus" DisplayName="Choice+" Type="Choice" Default="Default Choice+#1" FillInChoice="TRUE" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Default Choice+#1</CHOICE>
+            <CHOICE>Choice+#2</CHOICE>
+            <CHOICE>Choice+#3</CHOICE>
+        </CHOICES>    
+    </Field>
+
+    <Field ID="{1b18f077-b649-4e82-8582-5238db520b10}" Name="ChoicesPlus" DisplayName="Choices++" Type="MultiChoice" Default="Default Choices+#2" FillInChoice="TRUE" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Choices+#1</CHOICE>
+            <CHOICE>Default Choices+#2</CHOICE>
+            <CHOICE>Choices+#3</CHOICE>
+        </CHOICES>
+    </Field>
+
+    <Field ID="{896e440e-c5c5-42ec-a4ea-b91c57101fda}" Name="APicture" DisplayName="Pic" Type="URL" Format="Image" Required="FALSE" Group="Mauri Ora Test" />
+
+    <!-- <Field ID="{a112601f-86c8-4292-98f5-4a028c2d42c9}" Name="SingleExtendedLookup" DisplayName="Single extended lookup" Type="Lookup" Required="FALSE" Group="Mauri Ora Test" /> -->
+
+
+            <!-- MultilineText -->
+            <FieldRef ID="{23dae6d9-3d3a-4a77-99c8-44b2cc3373f4}" />
+
+            <!-- Money -->
+            <FieldRef ID="{893fc968-4fc8-416a-8142-6a4614493d6e}" />
+
+            <!-- IntegerNumber -->
+            <FieldRef ID="{bf9b8290-072e-4c23-a875-28fa8e61a5be}" />
+
+            <!-- FractionNumber -->
+            <FieldRef ID="{495f9229-aafa-4d09-aed7-10e142db1b20}" />
+
+            <!-- ADateTime -->
+            <FieldRef ID="{207cfa2e-1a1f-4f9c-a437-34ce55564f69}" />
+
+            <!-- ADate -->
+            <FieldRef ID="{91510b5c-b73d-4817-a081-07572e00fbe8}" />
+
+            <!-- AFlag -->
+            <FieldRef ID="{f3b76c0f-a07f-4984-9ffd-0e069751f474}" />
+
+            <!-- SomeOne -->
+            <FieldRef ID="{6b85d57e-8ab4-457a-b9f9-2cbe91c957d3}" />
+
+            <!-- SeveralPeople -->
+            <FieldRef ID="{df596ecd-c898-4b53-9d98-3b654f01ab2a}" />
+
+            <!-- SingleLookup -->
+            <FieldRef ID="{af3b7b87-0457-4df4-a5c6-b6f9ed928775}" />
+
+            <!-- MultiLookUp -->
+            <FieldRef ID="{2d9cf211-1a65-496d-8ff1-05c4a23cb872}" />
+
+            <!-- SingleChoice -->
+            <FieldRef ID="{388a8768-5a3f-42fa-9f19-0d8a9581760d}" />
+
+            <!-- MultiChoice -->
+            <FieldRef ID="{1a008b03-cb93-4f9c-bc79-268d946e6129}" />
+
+            <!-- ALink -->
+            <FieldRef ID="{0cacd952-9a01-45eb-aaac-ab1991943b6f}" />
+
+            <!-- MetaDepartment -->
+            <FieldRef ID="{2aa1aefa-8b0b-49d8-ac8c-3b3a4164684d}" />
+
+            <!-- Departments -->
+            <FieldRef ID="{1111b1fe-f987-4fdb-a2d4-28d5fb8f2e3a}" />
+
+            <!-- ChoicePlus -->
+            <FieldRef ID="{535cd918-588f-45de-8238-40bbbb300171}" />
+
+            <!-- ChoicesPlus -->
+            <FieldRef ID="{1b18f077-b649-4e82-8582-5238db520b10}" />
+
+            <!-- APicture -->
+            <FieldRef ID="{896e440e-c5c5-42ec-a4ea-b91c57101fda}" />
+
+            <!-- SingleExtendedLookup -->
+            <FieldRef ID="{a112601f-86c8-4292-98f5-4a028c2d42c9}" />
+
+    <Field ID="{e0acf141-10d4-4de8-9308-4fa3a16b43ba}" Name="CustomText" DisplayName="Custom text" Type="Text" Required="FALSE" Group="Mauri Ora Test" />
+
+    <ContentType ID="0x01000043722CDAAEC24975AC6FD4A53F205F83" Name="Test1" Group="Mauri Ora" Description="Test type containing a field of each type">
+        <FieldRefs>
+            <!-- CustomText -->
+            <FieldRef ID="{e0acf141-10d4-4de8-9308-4fa3a16b43ba}" />
+
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance CustomSchema="test1-schema.xml" FeatureId="dc05e95a-9d4b-4159-b4e6-9610ffcaac2d" Title="Test1" Description="Test list containing a field of each type" TemplateType="100" Url="Lists/Test1">
+    </ListInstance>

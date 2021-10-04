@@ -1,11 +1,11 @@
 {
     "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
     "solution": {
-        "name": "Mauri-Ora-WebPart-Test",
+        "name": "Mauri Ora WebPart Test",
         "id": "79a41a65-bab5-4796-8c15-fb43be772275",
-        "version": "0.0.6.0",
+        "version": "0.0.36.0",
         "includeClientSideAssets": true,
-        "skipFeatureDeployment": true,
+        "skipFeatureDeployment": false,
         "isDomainIsolated": false,
         "webApiPermissionRequests": [
             {
@@ -19,7 +19,23 @@
             "privacyUrl": "",
             "termsOfUseUrl": "",
             "mpnId": ""
-        }
+        },
+        "features": [
+            {
+                "title": "Test webpart with list",
+                "description": "Mauri Ora: Test WebPart with spfx test list",
+                "id": "ca89d405-6353-47f5-bf30-806ae826738c",
+                "version": "0.0.36.0",
+                "assets": {
+                    "elementManifests": [
+                        "elements.xml"
+                    ],
+                    "elementFiles": [
+                        "schema.xml"
+                    ]
+                }
+            }
+        ]
     },
     "paths": {
         "zippedPackage": "solution/webpart-test.sppkg"

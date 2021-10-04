@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+
+    <ListInstance FeatureId="dc05e95a-9d4b-4159-b4e6-9610ffcaac2d" Title="Test1" Description="Test list containing a field of each type" TemplateType="100" Url="Lists/Test1">
+    </ListInstance>
+
+</Elements>

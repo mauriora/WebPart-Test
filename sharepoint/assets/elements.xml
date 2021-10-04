@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <Field ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}"
+            Name="SPFxAmount"
+            DisplayName="Amount"
+            Type="Currency"
+            Decimals="2"
+            Min="0"
+            Required="FALSE"
+            Group="SPFx Columns" />
+
+    <Field ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}"
+            Name="SPFxCostCenter"
+            DisplayName="Cost Center"
+            Type="Choice"
+            Required="FALSE"
+            Group="SPFx Columns">
+        <CHOICES>
+        <CHOICE>Administration</CHOICE>
+        <CHOICE>Information</CHOICE>
+        <CHOICE>Facilities</CHOICE>
+        <CHOICE>Operations</CHOICE>
+        <CHOICE>Sales</CHOICE>
+        <CHOICE>Marketing</CHOICE>
+        </CHOICES>
+    </Field>
+
+    <Field ID="{23dae6d9-3d3a-4a77-99c8-44b2cc3373f4}" Name="MultilineText" DisplayName="Multiline text" Type="Note" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{893fc968-4fc8-416a-8142-6a4614493d6e}" Name="Money" DisplayName="Money" Type="Currency" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{bf9b8290-072e-4c23-a875-28fa8e61a5be}" Name="IntegerNumber" DisplayName="Integer" Type="Integer" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{495f9229-aafa-4d09-aed7-10e142db1b20}" Name="FractionNumber" DisplayName="Fraction" Type="Number" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{207cfa2e-1a1f-4f9c-a437-34ce55564f69}" Name="ADateTime" DisplayName="Date time" Type="DateTime" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{91510b5c-b73d-4817-a081-07572e00fbe8}" Name="ADate" DisplayName="Date" Type="DateTime" Format="DateOnly" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{f3b76c0f-a07f-4984-9ffd-0e069751f474}" Name="AFlag" DisplayName="Flag" Type="Boolean" Required="FALSE" Group="Mauri Ora Test" />
+    <Field ID="{6b85d57e-8ab4-457a-b9f9-2cbe91c957d3}" Name="SomeOne" DisplayName="Someone" Type="User" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{df596ecd-c898-4b53-9d98-3b654f01ab2a}" Name="SeveralPeople" DisplayName="Several people" Type="UserMulti" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{388a8768-5a3f-42fa-9f19-0d8a9581760d}" Name="SingleChoice" DisplayName="Single choice" Type="Choice" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Single1</CHOICE>
+            <CHOICE>Single2</CHOICE>
+            <CHOICE>Single3</CHOICE>
+        </CHOICES>    
+    </Field>
+
+    <Field ID="{1a008b03-cb93-4f9c-bc79-268d946e6129}" Name="MultiChoice" DisplayName="Multi choice" Type="MultiChoice" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Multi1</CHOICE>
+            <CHOICE>Multi2</CHOICE>
+            <CHOICE>Multi3</CHOICE>
+        </CHOICES>    
+    </Field>
+
+    <Field ID="{0cacd952-9a01-45eb-aaac-ab1991943b6f}" Name="ALink" DisplayName="ALink" Type="URL" Required="FALSE" Group="Mauri Ora Test" />
+
+    <Field ID="{535cd918-588f-45de-8238-40bbbb300171}" Name="ChoicePlus" DisplayName="Choice+" Type="Choice" FillInChoice="TRUE" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Default Choice+ #1</CHOICE>
+            <CHOICE>Choice+ #2</CHOICE>
+            <CHOICE>Choice+ #3</CHOICE>
+        </CHOICES>    
+    </Field>
+
+    <Field ID="{1b18f077-b649-4e82-8582-5238db520b10}" Name="ChoicesPlus" DisplayName="Choices++" Type="MultiChoice" FillInChoice="TRUE" Required="FALSE" Group="Mauri Ora Test">
+        <CHOICES>
+            <CHOICE>Choices+#1</CHOICE>
+            <CHOICE>Default Choices+#2</CHOICE>
+            <CHOICE>Choices+#3</CHOICE>
+        </CHOICES>
+    </Field>
+
+    <Field ID="{896e440e-c5c5-42ec-a4ea-b91c57101fda}" Name="APicture" DisplayName="Pic" Type="URL" Format="Image" Required="FALSE" Group="Mauri Ora Test" />
+
+    <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8A"
+            Name="Test1"
+            Group="Mauri Ora"
+            Description="Test type containing a field of each type">
+        <FieldRefs>
+            <FieldRef ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" />
+            <FieldRef ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" />
+
+            <FieldRef ID="{23dae6d9-3d3a-4a77-99c8-44b2cc3373f4}" />
+            <FieldRef ID="{893fc968-4fc8-416a-8142-6a4614493d6e}" />
+            <FieldRef ID="{bf9b8290-072e-4c23-a875-28fa8e61a5be}" />
+            <FieldRef ID="{495f9229-aafa-4d09-aed7-10e142db1b20}" />
+            <FieldRef ID="{207cfa2e-1a1f-4f9c-a437-34ce55564f69}" />
+            <FieldRef ID="{91510b5c-b73d-4817-a081-07572e00fbe8}" />
+            <FieldRef ID="{f3b76c0f-a07f-4984-9ffd-0e069751f474}" />
+            <FieldRef ID="{6b85d57e-8ab4-457a-b9f9-2cbe91c957d3}" />
+            <FieldRef ID="{df596ecd-c898-4b53-9d98-3b654f01ab2a}" />
+            <FieldRef ID="{388a8768-5a3f-42fa-9f19-0d8a9581760d}" />
+            <FieldRef ID="{1a008b03-cb93-4f9c-bc79-268d946e6129}" />
+            <FieldRef ID="{0cacd952-9a01-45eb-aaac-ab1991943b6f}" />
+            <FieldRef ID="{535cd918-588f-45de-8238-40bbbb300171}" />
+            <FieldRef ID="{1b18f077-b649-4e82-8582-5238db520b10}" />
+            <FieldRef ID="{896e440e-c5c5-42ec-a4ea-b91c57101fda}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+            CustomSchema="schema.xml"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Test1 List"
+            Description="Mauri Ora Test1 List"
+            TemplateType="100"
+            Url="Lists/SPFxList">
+    </ListInstance>
+
+</Elements>

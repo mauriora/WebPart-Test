@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <Field ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}"
+            Name="Urgent"
+            DisplayName="Urgent"
+            Type="YesNo"
+            Required="TRUE"
+            Group="Mauri Ora" />
+
+    <ContentType ID="0x010400CB8E26C2DB41734BA3E0DC25E58FFD97"
+            Name="Announcement Extended"
+            Group="Mauri Ora"
+            Description="Standard announcement extended by Start (Date), Urgent (Yes/No) and URL">
+        <FieldRefs>
+            <!-- Urgent Field declared above -->
+            <FieldRef ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" />
+
+            <!-- Owner Site Column -->
+            <FieldRef ID="{2e8881da-0332-4ad9-a565-45b5b8b2702f}" />
+
+            <!-- Start Date Site Column -->
+            <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" />
+
+            <!-- URL Site Column -->
+            <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+            CustomSchema="extended-announcements-schema.xml"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Announcements"
+            Description="Announcements with options"
+            TemplateType="104"
+            Url="Lists/AnnouncementsExtended">
+    </ListInstance>
+
+</Elements>
