@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <ListInstance
+            CustomSchema="test2-schema.xml"
+            FeatureId="842d0813-b14b-44e5-9ec7-9e9d14ee7017"
+            Title="Test List 2"
+            Description="Second Test List with only the default fields"
+            TemplateType="100"
+            Url="Lists/TestList2">
+    </ListInstance>
+
+</Elements>

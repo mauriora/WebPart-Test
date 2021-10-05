@@ -1,7 +1,7 @@
-<List xmlns:ows="Microsoft SharePoint" Title="Basic List" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Basic List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="Test List 2" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/TestList2" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentTypeRef ID="0x010042D0C1C200A14B6887742B6344675C8A" />
+      <ContentTypeRef ID="0x0100" />
     </ContentTypes>
     <Fields></Fields>
     <Views>
@@ -12,8 +12,6 @@
         <Toolbar Type="Standard" />
         <ViewFields>
           <FieldRef Name="LinkTitle"></FieldRef>
-          <FieldRef Name="SPFxAmount"></FieldRef>
-          <FieldRef Name="SPFxCostCenter"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>

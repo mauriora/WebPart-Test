@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <Field ID="{f4e168e4-e288-41ac-9218-3489ac3c9f4e}" Name="SomeText" DisplayName="Some Text" Type="Text" Required="TRUE" Group="Mauri Ora Test" />
+    <Field ID="{63c1bc8c-fddd-4543-a5bc-1a4b947ba0a4}" Name="PositiveInteger" DisplayName="Positive Integer" Type="Integer" Required="TRUE" Group="Mauri Ora Test" />
+
+    <ContentType ID="0x01006503FB09E4464C5490C971D0F484EA59"
+            Name="Test3"
+            Group="Mauri Ora"
+            Description="Test type containing two additional expandable fields for lookups">
+        <FieldRefs>
+            <FieldRef ID="{f4e168e4-e288-41ac-9218-3489ac3c9f4e}" />
+            <FieldRef ID="{63c1bc8c-fddd-4543-a5bc-1a4b947ba0a4}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+            CustomSchema="test3-schema.xml"
+            FeatureId="b2683b41-f112-47da-9097-e362e2dfd4af"
+            Title="Test List 3"
+            Description="Third Test List with additional expandable fields for lookups "
+            TemplateType="100"
+            Url="Lists/TestList3">
+    </ListInstance>
+
+</Elements>

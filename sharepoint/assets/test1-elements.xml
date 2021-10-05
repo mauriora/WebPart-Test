@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
 
-    <Field ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}"
-            Name="SPFxAmount"
-            DisplayName="Amount"
-            Type="Currency"
-            Decimals="2"
-            Min="0"
-            Required="FALSE"
-            Group="SPFx Columns" />
-
-    <Field ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}"
-            Name="SPFxCostCenter"
-            DisplayName="Cost Center"
-            Type="Choice"
-            Required="FALSE"
-            Group="SPFx Columns">
-        <CHOICES>
-        <CHOICE>Administration</CHOICE>
-        <CHOICE>Information</CHOICE>
-        <CHOICE>Facilities</CHOICE>
-        <CHOICE>Operations</CHOICE>
-        <CHOICE>Sales</CHOICE>
-        <CHOICE>Marketing</CHOICE>
-        </CHOICES>
-    </Field>
-
     <Field ID="{23dae6d9-3d3a-4a77-99c8-44b2cc3373f4}" Name="MultilineText" DisplayName="Multiline text" Type="Note" Required="FALSE" Group="Mauri Ora Test" />
     <Field ID="{893fc968-4fc8-416a-8142-6a4614493d6e}" Name="Money" DisplayName="Money" Type="Currency" Required="FALSE" Group="Mauri Ora Test" />
     <Field ID="{bf9b8290-072e-4c23-a875-28fa8e61a5be}" Name="IntegerNumber" DisplayName="Integer" Type="Integer" Required="FALSE" Group="Mauri Ora Test" />
@@ -73,14 +48,11 @@
 
     <Field ID="{896e440e-c5c5-42ec-a4ea-b91c57101fda}" Name="APicture" DisplayName="Pic" Type="URL" Format="Image" Required="FALSE" Group="Mauri Ora Test" />
 
-    <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8A"
+    <ContentType ID="0x0100A38A54D4D8F640CBA96F2FA4A262F20A"
             Name="Test1"
             Group="Mauri Ora"
             Description="Test type containing a field of each type">
         <FieldRefs>
-            <FieldRef ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" />
-            <FieldRef ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" />
-
             <FieldRef ID="{23dae6d9-3d3a-4a77-99c8-44b2cc3373f4}" />
             <FieldRef ID="{893fc968-4fc8-416a-8142-6a4614493d6e}" />
             <FieldRef ID="{bf9b8290-072e-4c23-a875-28fa8e61a5be}" />
@@ -100,12 +72,12 @@
     </ContentType>
 
     <ListInstance
-            CustomSchema="schema.xml"
+            CustomSchema="test1-schema.xml"
             FeatureId="00bfea71-de22-43b2-a848-c05709900100"
-            Title="Test1 List"
-            Description="Mauri Ora Test1 List"
+            Title="Test List 1"
+            Description="First and main Test List containing a field of each type"
             TemplateType="100"
-            Url="Lists/SPFxList">
+            Url="Lists/TestList1">
     </ListInstance>
 
 </Elements>
