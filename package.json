@@ -1,6 +1,6 @@
 {
   "name": "@mauriora/webpart-test",
-  "version": "0.0.48",
+  "version": "0.0.50",
   "private": true,
   "main": "lib/index.js",
   "engines": {

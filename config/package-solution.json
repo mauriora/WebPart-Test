@@ -3,7 +3,7 @@
     "solution": {
         "name": "Mauri Ora WebPart Test",
         "id": "79a41a65-bab5-4796-8c15-fb43be772275",
-        "version": "0.0.48.0",
+        "version": "0.0.50.0",
         "includeClientSideAssets": true,
         "skipFeatureDeployment": false,
         "isDomainIsolated": false,
@@ -25,13 +25,17 @@
                 "title": "Test webpart with test list",
                 "description": "Mauri Ora: Test WebPart with spfx test lists",
                 "id": "ca89d405-6353-47f5-bf30-806ae826738c",
-                "version": "0.0.48.0",
+                "version": "0.0.50.0",
                 "assets": {
                     "elementManifests": [
-                        "test1-elements.xml"
+                        "test1-elements.xml",
+                        "test2-elements.xml",
+                        "test3-elements.xml"
                     ],
                     "elementFiles": [
-                        "test1-schema.xml"
+                        "test1-schema.xml",
+                        "test2-schema.xml",
+                        "test3-schema.xml"
                     ]
                 }
             }

@@ -16,7 +16,7 @@
 
     <ListInstance
             CustomSchema="test3-schema.xml"
-            FeatureId="b2683b41-f112-47da-9097-e362e2dfd4af"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
             Title="Test List 3"
             Description="Third Test List with additional expandable fields for lookups "
             TemplateType="100"
